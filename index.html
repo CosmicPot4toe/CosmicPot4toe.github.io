@@ -15,34 +15,46 @@
 		<h2>Caracteristicas</h2>
 		<ul>
 			<li>Inicio de Sesion:
-				<br><p>
+				<br>
+				<p>
 					La aplicacion permite a los Alumnos inicar sesion con sus credenciales de acceso gracias al uso de
 					<a href="https://firebase.google.com">firebase</a>.
 				</p>
 			</li>
 			<li>Recuperacion de contraseña:
-				<br><p>
+				<br>
+				<p>
 					La aplicacion permite a los Alumnos cambiar su contraseña en caso de que la olviden.
 				</p>
 			</li>
 			<li>Escaneo de QR:
-				<br><p>
-					Se puede escanear un codigo QR para registrar la asistencia del Alumno. esto gracias al paquete 
-					<a href="https://www.npmjs.com/package/@capacitor-community/barcode-scanner">barcode-scanner</a> de capacitor-community.
+				<br>
+				<p>
+					Se puede escanear un codigo QR para registrar la asistencia del Alumno. esto gracias al paquete
+					<a href="https://www.npmjs.com/package/@capacitor-community/barcode-scanner">barcode-scanner</a> de
+					capacitor-community.
 				</p>
 			</li>
 			<li>Registro de Asistencia:
-				<br><p>
+				<br>
+				<p>
 					Una vez escaneado el codigo QR se le permite al Alumno registrar su asistencia a clases atraves de firestore.
 				</p>
 			</li>
 		</ul>
-		<button>
-			<a href="https://github.com/CosmicPot4toe/CosmicPot4toe.github.io/raw/main/files/app-debug.apk"
-				download="true">Descargar App
-			</a>
-		</button>
+		<div class="download">
+			<img id="web" src="./static/img/qr_descarga.png" alt="descargar apk">
+			<button id="mobile">
+				<a href="https://github.com/CosmicPot4toe/CosmicPot4toe.github.io/raw/main/files/app-debug.apk"
+					download="true">Descargar App
+				</a>
+			</button>
+		</div>
 	</div>
+	<!-- scripts -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="./static/java.js"></script>
 </body>
 
 </html>
