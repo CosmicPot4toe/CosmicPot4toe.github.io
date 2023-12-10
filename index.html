@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Owo</title>
 	<link rel="stylesheet" href="./static/global.css">
 </head>
-<body>
-	<h1 style="align-items: center;">Bienvenido a RegistrAPP</h1>
 
-	<a href="https://github.com/CosmicPot4toe/CosmicPot4toe.github.io/blob/main/files/app-debug.apk" download="true">Test</a>
+<body>
+	<div class="container">
+		<h1 style="align-items: center;">Bienvenido a RegistrAPP</h1>
+		<hr><br><br><br>
+		<h2>Caracteristicas</h2>
+		<ol>
+			<li>Inicio de Sesion:
+				<br><p>
+					La aplicacion permite a los estudiantes inicar sesion con sus credenciales de acceso gracias al uso de
+					<a href="https://firebase.google.com">firebase</a>.
+				</p>
+			</li>
+			<li>Recuperacion de contraseña:
+				<br><p>
+					La aplicacion permite a los estudiantes cambiar su contraseña en caso de que la olviden.
+				</p>
+			</li>
+			<li>Escaneo de QR:
+				<br><p>
+					Se puede escanear un codigo QR para registrar la asistencia del Alumno. esto gracias al paquete 
+					<a href="https://www.npmjs.com/package/@capacitor-community/barcode-scanner">barcode-scanner</a> de capacitor-community.
+				</p>
+			</li>
+		</ol>
+		<button>
+			<a href="https://github.com/CosmicPot4toe/CosmicPot4toe.github.io/raw/main/files/app-debug.apk"
+				download="true">Descargar App
+			</a>
+		</button>
+	</div>
 </body>
+
 </html>
