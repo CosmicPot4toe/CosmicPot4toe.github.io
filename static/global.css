@@ -1,3 +1,7 @@
 body{
-	background-color:lightcoral;
+	background-color:rgb(109, 109, 109);
+}
+.container{
+	flex: auto;
+	margin-inline: 5%;
 }
