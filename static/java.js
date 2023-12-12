@@ -8,9 +8,9 @@ window.mobileCheck = function () {
 $(document).ready(function () {
 	if(window.mobileCheck()){
 		$("img#web").hide();
-		$("button#mobile").show();
+		$("div#mobile").show();
 	}else{
-		$("button#mobile").hide();
+		$("div#mobile").hide();
 		$("img#web").show();
 	};
 });

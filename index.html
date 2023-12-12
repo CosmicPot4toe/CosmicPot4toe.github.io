@@ -6,49 +6,63 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Owo</title>
 	<link rel="stylesheet" href="./static/global.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+	  </style>
 </head>
 
 <body>
 	<div class="container">
-		<h1 style="align-items: center;">Bienvenido a RegistrAPP</h1>
-		<hr><br><br>
-		<h2>Caracteristicas</h2>
+		<div class="top">
+			
+		<img class="logo" src="./static/img/640px-Logo_DuocUC.svg" alt="">
+		<h1>RegistrAPP</h1>
+	</div>
+		<div class="caracteristicas"><h2>Características</h2>
 		<ul>
-			<li>Inicio de Sesion:
+			<li><b>Inicio de Sesión:</b>
 				<br>
 				<p>
 					La aplicacion permite a los Alumnos inicar sesion con sus credenciales de acceso gracias al uso de
 					<a href="https://firebase.google.com">firebase</a>.
 				</p>
 			</li>
-			<li>Recuperacion de contraseña:
+			<li><b>Recuperación de contraseña:</b>
 				<br>
 				<p>
 					La aplicacion permite a los Alumnos cambiar su contraseña en caso de que la olviden.
 				</p>
 			</li>
-			<li>Escaneo de QR:
+			<img src="./static/img/Screenshot_20231212_051605_RegistrAPP.jpg" alt="">
+
+			<li><b>Escaneo de QR:</b>
 				<br>
 				<p>
 					Se puede escanear un codigo QR para registrar la asistencia del Alumno. esto gracias al paquete
 					<a href="https://www.npmjs.com/package/@capacitor-community/barcode-scanner">barcode-scanner</a> de
 					capacitor-community.
 				</p>
+				
 			</li>
-			<li>Registro de Asistencia:
+			<img src="./static/img/Screenshot_20231212_051758_RegistrAPP.jpg" alt="">
+			<li><b>Registro de Asistencia:</b>
 				<br>
 				<p>
-					Una vez escaneado el codigo QR se le permite al Alumno registrar su asistencia a clases atraves de firestore.
+					Una vez escaneado el codigo QR se le permite al Alumno registrar su asistencia a clases a través de firestore.
 				</p>
 			</li>
-		</ul>
+			<img src="./static/img/Screenshot_20231212_051833_RegistrAPP.jpg" alt="">
+		</ul></div>
 		<div class="download">
-			<img id="web" src="./static/img/qr_descarga.png" alt="descargar apk">
-			<button id="mobile">
+			<div id="web" class="pcView">
+			<h2>Escanea aquí para descargar: </h2>
+			<img  src="./static/img/qr_descarga.png" alt="descargar apk"></div>
+		<div id="mobile" class="mobileView">
+			<h2>Toca aquí para descargar</h2>	<button>
 				<a href="https://github.com/CosmicPot4toe/CosmicPot4toe.github.io/raw/main/files/app-debug.apk"
 					download="true">Descargar App
 				</a>
-			</button>
+			</button></div>
 		</div>
 	</div>
 	<!-- scripts -->
