@@ -15,23 +15,23 @@ body{
 .container{
 	justify-content: center;
 	align-items: center;
-	display: grid;
-	grid-template-columns: repeat(2,2fr);
-	grid-template-rows: 0.5fr 2fr 1.5fr;
+	display: flex;
+	flex-direction: column;
+	/* grid-template-columns: repeat(2,2fr);
+	grid-template-rows: 0.5fr 3fr 1.5fr; */
 	width: 100%;
-	grid-template-areas: "a a"
+	/* grid-template-areas: "a a"
 						"b b"
-						"c c";
+						"c c"; */
 
 	.top{
 		display: flex;
-		grid-area: a;
 		background-color:#131212 ;
 		color: white;
-		height: 100%;
 		box-shadow:5px 5px 5px#ffae00 ;
 		justify-content: space-around;
 		align-items:baseline;
+		width: 100%;
 		
 	}
 	h1{
@@ -41,28 +41,52 @@ body{
 	}
 	
 }
-.caracteristicas{
-	grid-area: b;
-	margin: 0 20%;
-	display: flex;
-	flex-direction: column;
+.caracteristicas {
 	font-size: x-large;
+	margin: 0 10%;
 	h2{
 		color: #fbab00;
+		height: min-content;
+	}
+	ul{
+		display: grid;
+		grid-template-areas: "a a a"
+							"b b b";
+		margin-top: 50px;
+		gap: 50px;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
+
+
+	
+	p{
+		max-width: 500px;
+	}
+	li{
+		width: 400px;
+	}
+	}
+	img{
+		width: 400px;
+		margin: 20px;
+		border-radius: 10px;
+		height: 500px;
 	}
 }
+
 a{
 	text-decoration: underline;
 	font-style:oblique;
 	color: rgb(0, 0, 0);
 }
-li{}
 .download {
 	grid-area: c;
 	background-color: #131212;
-	height: 100%;
 	color: white;
 	box-shadow: 0 5px #fbab00 inset;
+	width: 100%;
+
 	.pcView{
 		gap: 20%;
 		display: flex;
@@ -71,18 +95,63 @@ li{}
 	align-items: center;
 	flex-direction: column;
 	text-align: center;
+	margin-bottom: 5%;
 }
 h2{
 	font-size: 3rem;
 }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
 	.container{
 		margin: 0;
 		width: 100%;
 	}
 	.caracteristicas{
 		margin: 0 5%;
+		width: 100%;
+		img{
+			width: 90%;
+			margin: 0;
+		}
+		h2{
+			text-align: center;
+		}
+		ul{
+		display: grid;
+		width: 90%;
+		justify-content: center;
+		align-items: center;
+		
+		grid-template-areas: "a"
+					"b"
+					"c"
+					"d"
+					"e"
+					"f";
+			
+					.li1 {
+						grid-area: a;
+						height: min-content;
+					}
+					.im1{
+						grid-area: b;
+					}
+					.li2{
+						grid-area: c;
+					}
+					.im2{
+						grid-area: d;
+					}
+					.li3{
+						grid-area: e;
+					}
+					.im3{
+						grid-area: f;
+					}
+		li{
+			width: 500px;
+		}
+	}
 	}
 	.logo{
 		width: 300px;
