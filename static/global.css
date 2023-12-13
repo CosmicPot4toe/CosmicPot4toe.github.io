@@ -4,6 +4,7 @@ body{
 	scroll-behavior: smooth;
 	margin: 0;
 	width: 100%;
+	overflow: hidden;
 }
 .logo{
 	
@@ -25,7 +26,7 @@ body{
 	display: flex;
 	background-color:#131212 ;
 	color: white;
-	box-shadow:5px 5px 5px#ffae00 ;
+	box-shadow:0 5px 0#ffae00 ;
 	justify-content: space-around;
 	align-items:baseline;
 	width: 100%;
@@ -106,7 +107,7 @@ margin-bottom: 5%;
 		width: 100%;
 	}
 	.caracteristicas{
-		margin: 0 5%;
+		margin: 0;
 		width: 100%;
 		
 	}
@@ -133,14 +134,13 @@ margin-bottom: 5%;
 				
 			}
 			ul li{
-				width: auto
+				width: 90%
 			}
 	.logo{
 		width: 300px;
 	}
 	.li1 {
 		grid-area: a;
-		height: min-content;
 	}
 	.im1{
 		grid-area: b;
@@ -176,11 +176,13 @@ button{
 	color: white;
 	font-size: x-large;
 	font-family: 'Merriweather', serif;
+	margin: 50px;
 
 }
 .mobileView a{
 	color: white;
 	text-decoration: none;
+	width: 75%;
 	
 
 }
