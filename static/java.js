@@ -7,10 +7,10 @@ window.mobileCheck = function () {
 
 $(document).ready(function () {
 	if(window.mobileCheck()){
-		$("img#web").hide();
+		$("div#web").hide();
 		$("div#mobile").show();
 	}else{
 		$("div#mobile").hide();
-		$("img#web").show();
+		$("div#web").show();
 	};
 });
